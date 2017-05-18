@@ -1,8 +1,16 @@
-plugins {
-    id "fr.brouillard.oss.gradle.jgitver" version "0.2.0"
+allprojects {
+  task hello << { task -> println "In $task.project.name::$task.project.version" }
 }
 
-repositories {
-    jcenter()
+subprojects {
+
+  apply plugin: "java"
+ 
+  repositories {
     mavenCentral()
+  }
+
+  dependencies {
+     testCompile "junit:junit:4+"
+  }
 }

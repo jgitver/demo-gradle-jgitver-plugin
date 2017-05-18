@@ -1,0 +1,8 @@
+plugins {
+    id "fr.brouillard.oss.gradle.jgitver" version "0.2.0"
+}
+
+dependencies {
+      compile project(':common'), project(':api')
+      compile 'org.apache.logging.log4j:log4j-core:2.6.2'
+}
