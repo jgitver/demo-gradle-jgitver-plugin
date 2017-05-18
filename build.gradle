@@ -1,0 +1,8 @@
+plugins {
+    id "fr.brouillard.oss.gradle.jgitver" version "0.2.0"
+}
+
+repositories {
+    jcenter()
+    mavenCentral()
+}
